@@ -11,6 +11,6 @@ def test_button_is_present(browser):
     browser.implicitly_wait(5)
 
 
-    add_to_cart_button = browser.find_elements(By.XPATH, '//button[@class="b3tn btn-lg btn-primary btn-add-to-basket"]')
+    add_to_cart_button = browser.find_elements(By.XPATH, '//button[@class="btn btn-lg btn-primary btn-add-to-basket"]')
 
     assert len(add_to_cart_button) == 1, f'{len(add_to_cart_button)} buttons found, expected: 1'
